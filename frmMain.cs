@@ -16,5 +16,28 @@ namespace pryGestion
         {
             InitializeComponent();
         }
+
+        private void mrcLogin_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkCondicional_CheckedChanged(object sender, EventArgs e)
+        {
+            frmUsuariosRegistrados frmUsuariosRegistrados = new frmUsuariosRegistrados();
+            frmUsuariosRegistrados.ShowDialog();
+            
+        }
+
+        private void cmdRegistrar_Click(object sender, EventArgs e)
+        {
+            frmRegistrar frmRegistrar = new frmRegistrar();
+            frmRegistrar.ShowDialog();
+        }
     }
 }
