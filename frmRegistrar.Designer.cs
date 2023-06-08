@@ -63,7 +63,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(180, 126);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 22);
             this.textBox1.TabIndex = 1;
@@ -82,13 +82,14 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(75, 13);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 3;
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Relevamiento",
@@ -97,8 +98,8 @@
             "Analisis ",
             "Diagrama de Bases de Datos ",
             "Programacion "});
-            this.comboBox1.Location = new System.Drawing.Point(180, 68);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Location = new System.Drawing.Point(180, 70);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 24);
             this.comboBox1.TabIndex = 5;
@@ -121,9 +122,9 @@
             this.mrcReunion.Controls.Add(this.radioButton1);
             this.mrcReunion.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcReunion.Location = new System.Drawing.Point(7, 172);
-            this.mrcReunion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcReunion.Margin = new System.Windows.Forms.Padding(4);
             this.mrcReunion.Name = "mrcReunion";
-            this.mrcReunion.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcReunion.Padding = new System.Windows.Forms.Padding(4);
             this.mrcReunion.Size = new System.Drawing.Size(333, 71);
             this.mrcReunion.TabIndex = 7;
             this.mrcReunion.TabStop = false;
@@ -133,7 +134,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(192, 36);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(51, 23);
             this.radioButton2.TabIndex = 1;
@@ -145,7 +146,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(55, 36);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(45, 23);
             this.radioButton1.TabIndex = 0;
@@ -161,9 +162,9 @@
             this.mrcTareas.Controls.Add(this.checkBox1);
             this.mrcTareas.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcTareas.Location = new System.Drawing.Point(7, 265);
-            this.mrcTareas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcTareas.Margin = new System.Windows.Forms.Padding(4);
             this.mrcTareas.Name = "mrcTareas";
-            this.mrcTareas.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcTareas.Padding = new System.Windows.Forms.Padding(4);
             this.mrcTareas.Size = new System.Drawing.Size(333, 123);
             this.mrcTareas.TabIndex = 8;
             this.mrcTareas.TabStop = false;
@@ -173,7 +174,7 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(180, 72);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(82, 23);
             this.checkBox4.TabIndex = 3;
@@ -184,7 +185,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(8, 69);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(135, 23);
             this.checkBox3.TabIndex = 2;
@@ -195,7 +196,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(180, 41);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(130, 23);
             this.checkBox2.TabIndex = 1;
@@ -206,7 +207,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(8, 41);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(120, 23);
             this.checkBox1.TabIndex = 0;
@@ -217,7 +218,7 @@
             // 
             this.cmdGrabar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdGrabar.Location = new System.Drawing.Point(187, 417);
-            this.cmdGrabar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdGrabar.Margin = new System.Windows.Forms.Padding(4);
             this.cmdGrabar.Name = "cmdGrabar";
             this.cmdGrabar.Size = new System.Drawing.Size(112, 39);
             this.cmdGrabar.TabIndex = 9;
@@ -229,7 +230,7 @@
             // 
             this.cmdCancelar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCancelar.Location = new System.Drawing.Point(31, 417);
-            this.cmdCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(104, 39);
             this.cmdCancelar.TabIndex = 10;
@@ -262,7 +263,7 @@
             this.Controls.Add(this.lblTipo_Actividad);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblFecha);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRegistrar";
             this.Text = "frmRegistrar";
             this.Load += new System.EventHandler(this.frmRegistrar_Load);

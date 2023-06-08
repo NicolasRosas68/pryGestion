@@ -39,5 +39,10 @@ namespace pryGestion
             frmRegistrar frmRegistrar = new frmRegistrar();
             frmRegistrar.ShowDialog();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
