@@ -28,46 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNombre_de_usuario_registrado = new System.Windows.Forms.Label();
+            this.lblcontraseña_Usuario_Registrado = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // lbl
+            // lblNombre_de_usuario_registrado
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(29, 70);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(44, 16);
-            this.lbl.TabIndex = 0;
-            this.lbl.Text = "label1";
-            this.lbl.Click += new System.EventHandler(this.label1_Click);
+            this.lblNombre_de_usuario_registrado.AutoSize = true;
+            this.lblNombre_de_usuario_registrado.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre_de_usuario_registrado.Location = new System.Drawing.Point(11, 50);
+            this.lblNombre_de_usuario_registrado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombre_de_usuario_registrado.Name = "lblNombre_de_usuario_registrado";
+            this.lblNombre_de_usuario_registrado.Size = new System.Drawing.Size(141, 18);
+            this.lblNombre_de_usuario_registrado.TabIndex = 0;
+            this.lblNombre_de_usuario_registrado.Text = "Nombre de usuario";
+            this.lblNombre_de_usuario_registrado.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lblcontraseña_Usuario_Registrado
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.lblcontraseña_Usuario_Registrado.AutoSize = true;
+            this.lblcontraseña_Usuario_Registrado.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcontraseña_Usuario_Registrado.Location = new System.Drawing.Point(11, 90);
+            this.lblcontraseña_Usuario_Registrado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblcontraseña_Usuario_Registrado.Name = "lblcontraseña_Usuario_Registrado";
+            this.lblcontraseña_Usuario_Registrado.Size = new System.Drawing.Size(85, 18);
+            this.lblcontraseña_Usuario_Registrado.TabIndex = 1;
+            this.lblcontraseña_Usuario_Registrado.Text = "contraseña";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 186);
+            this.label3.Location = new System.Drawing.Point(22, 151);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 16);
+            this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(158, 50);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(158, 91);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 4;
             // 
             // frmUsuariosRegistrados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 491);
+            this.ClientSize = new System.Drawing.Size(270, 233);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lbl);
+            this.Controls.Add(this.lblcontraseña_Usuario_Registrado);
+            this.Controls.Add(this.lblNombre_de_usuario_registrado);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmUsuariosRegistrados";
             this.Text = "frmUsuariosRegistrados";
             this.Load += new System.EventHandler(this.frmUsuariosRegistrados_Load);
@@ -78,8 +102,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNombre_de_usuario_registrado;
+        private System.Windows.Forms.Label lblcontraseña_Usuario_Registrado;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

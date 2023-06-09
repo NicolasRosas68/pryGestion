@@ -43,6 +43,17 @@ namespace pryGestion
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
+            {
+
+            }
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtNombre.Text))
+            {
+                label1.Text = "";
+            }    
         }
     }
 }

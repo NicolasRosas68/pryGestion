@@ -29,7 +29,31 @@ namespace pryGestion
 
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
-            
+            if (dateTimePicker1.Value >= DateTime.Today)
+
+            {
+                if (comboBox1.SelectedIndex != -1 )
+
+                {
+                    if (txtDetalle_de_Actividad.Text != "")
+                    {
+                        MessageBox.Show("te falta completar el detalle");
+                        txtDetalle_de_Actividad.Focus();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("te falta completar detalle");
+                    txtDetalle_de_Actividad.Focus();
+                }
+            }
+            else
+            {
+                MessageBox.Show("seleccione una fecha posterior a la actual","carga de tareas",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
+                dateTimePicker1.Value = DateTime.Today;
+                dateTimePicker1.Focus();
+            }
         }
     }
 }
