@@ -32,18 +32,24 @@ namespace pryGestion
             if (dateTimePicker1.Value >= DateTime.Today)
 
             {
-                if (comboBox1.SelectedIndex != -1 )
+                if (lstTipo_de_Actividad.SelectedIndex != -1 )
 
                 {
                     if (txtDetalle_de_Actividad.Text != "")
                     {
+                        MessageBox.Show("vamos a grabar");
+                        
+                    }
+                    else
+                    {
                         MessageBox.Show("te falta completar el detalle");
                         txtDetalle_de_Actividad.Focus();
+
                     }
                 }
                 else
                 {
-                    MessageBox.Show("te falta completar detalle");
+                    MessageBox.Show("te falta completar tipo de actividad");
                     txtDetalle_de_Actividad.Focus();
                 }
             }

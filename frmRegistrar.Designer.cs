@@ -32,7 +32,7 @@
             this.txtDetalle_de_Actividad = new System.Windows.Forms.TextBox();
             this.lblTipo_Actividad = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lstTipo_de_Actividad = new System.Windows.Forms.ComboBox();
             this.lblDetalle_Actividad = new System.Windows.Forms.Label();
             this.mrcReunion = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -83,22 +83,22 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 3;
             // 
-            // comboBox1
+            // lstTipo_de_Actividad
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.lstTipo_de_Actividad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstTipo_de_Actividad.FormattingEnabled = true;
+            this.lstTipo_de_Actividad.Items.AddRange(new object[] {
             "Relevamiento",
             "Propuesta ",
             "Diagnostico ",
             "Analisis ",
             "Diagrama de Bases de Datos ",
             "Programacion "});
-            this.comboBox1.Location = new System.Drawing.Point(135, 57);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.lstTipo_de_Actividad.Location = new System.Drawing.Point(135, 57);
+            this.lstTipo_de_Actividad.Name = "lstTipo_de_Actividad";
+            this.lstTipo_de_Actividad.Size = new System.Drawing.Size(121, 21);
+            this.lstTipo_de_Actividad.TabIndex = 5;
+            this.lstTipo_de_Actividad.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // lblDetalle_Actividad
             // 
@@ -239,7 +239,7 @@
             this.Controls.Add(this.mrcTareas);
             this.Controls.Add(this.mrcReunion);
             this.Controls.Add(this.lblDetalle_Actividad);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lstTipo_de_Actividad);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lblTipo_Actividad);
             this.Controls.Add(this.txtDetalle_de_Actividad);
@@ -262,7 +262,7 @@
         private System.Windows.Forms.TextBox txtDetalle_de_Actividad;
         private System.Windows.Forms.Label lblTipo_Actividad;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox lstTipo_de_Actividad;
         private System.Windows.Forms.Label lblDetalle_Actividad;
         private System.Windows.Forms.GroupBox mrcReunion;
         private System.Windows.Forms.RadioButton radioButton2;
