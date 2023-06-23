@@ -31,17 +31,17 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.txtDetalle_de_Actividad = new System.Windows.Forms.TextBox();
             this.lblTipo_Actividad = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.lstTipo_de_Actividad = new System.Windows.Forms.ComboBox();
             this.lblDetalle_Actividad = new System.Windows.Forms.Label();
             this.mrcReunion = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.optno = new System.Windows.Forms.RadioButton();
+            this.optsi = new System.Windows.Forms.RadioButton();
             this.mrcTareas = new System.Windows.Forms.GroupBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkDebate = new System.Windows.Forms.CheckBox();
+            this.chkNotas_reuniones = new System.Windows.Forms.CheckBox();
+            this.chkInvestigacion = new System.Windows.Forms.CheckBox();
+            this.chkRepositorio = new System.Windows.Forms.CheckBox();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.mrcReunion.SuspendLayout();
@@ -75,12 +75,12 @@
             this.lblTipo_Actividad.TabIndex = 2;
             this.lblTipo_Actividad.Text = "Tipo Actividad";
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(56, 11);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dtpFecha.Location = new System.Drawing.Point(56, 11);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpFecha.TabIndex = 3;
             // 
             // lstTipo_de_Actividad
             // 
@@ -111,8 +111,8 @@
             // 
             // mrcReunion
             // 
-            this.mrcReunion.Controls.Add(this.radioButton2);
-            this.mrcReunion.Controls.Add(this.radioButton1);
+            this.mrcReunion.Controls.Add(this.optno);
+            this.mrcReunion.Controls.Add(this.optsi);
             this.mrcReunion.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcReunion.Location = new System.Drawing.Point(5, 140);
             this.mrcReunion.Name = "mrcReunion";
@@ -121,34 +121,34 @@
             this.mrcReunion.TabStop = false;
             this.mrcReunion.Text = "Reunion";
             // 
-            // radioButton2
+            // optno
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(144, 29);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(40, 19);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "No";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.optno.AutoSize = true;
+            this.optno.Location = new System.Drawing.Point(144, 29);
+            this.optno.Name = "optno";
+            this.optno.Size = new System.Drawing.Size(40, 19);
+            this.optno.TabIndex = 1;
+            this.optno.TabStop = true;
+            this.optno.Text = "No";
+            this.optno.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // optsi
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(41, 29);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(37, 19);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Si";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.optsi.AutoSize = true;
+            this.optsi.Location = new System.Drawing.Point(41, 29);
+            this.optsi.Name = "optsi";
+            this.optsi.Size = new System.Drawing.Size(37, 19);
+            this.optsi.TabIndex = 0;
+            this.optsi.TabStop = true;
+            this.optsi.Text = "Si";
+            this.optsi.UseVisualStyleBackColor = true;
             // 
             // mrcTareas
             // 
-            this.mrcTareas.Controls.Add(this.checkBox4);
-            this.mrcTareas.Controls.Add(this.checkBox3);
-            this.mrcTareas.Controls.Add(this.checkBox2);
-            this.mrcTareas.Controls.Add(this.checkBox1);
+            this.mrcTareas.Controls.Add(this.chkDebate);
+            this.mrcTareas.Controls.Add(this.chkNotas_reuniones);
+            this.mrcTareas.Controls.Add(this.chkInvestigacion);
+            this.mrcTareas.Controls.Add(this.chkRepositorio);
             this.mrcTareas.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcTareas.Location = new System.Drawing.Point(5, 215);
             this.mrcTareas.Name = "mrcTareas";
@@ -157,45 +157,46 @@
             this.mrcTareas.TabStop = false;
             this.mrcTareas.Text = "Tareas";
             // 
-            // checkBox4
+            // chkDebate
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(135, 58);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(63, 19);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Debate";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkDebate.AutoSize = true;
+            this.chkDebate.Location = new System.Drawing.Point(135, 58);
+            this.chkDebate.Name = "chkDebate";
+            this.chkDebate.Size = new System.Drawing.Size(63, 19);
+            this.chkDebate.TabIndex = 3;
+            this.chkDebate.Text = "Debate";
+            this.chkDebate.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkNotas_reuniones
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 56);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(103, 19);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Notas reuniòn";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkNotas_reuniones.AutoSize = true;
+            this.chkNotas_reuniones.Location = new System.Drawing.Point(6, 56);
+            this.chkNotas_reuniones.Name = "chkNotas_reuniones";
+            this.chkNotas_reuniones.Size = new System.Drawing.Size(103, 19);
+            this.chkNotas_reuniones.TabIndex = 2;
+            this.chkNotas_reuniones.Text = "Notas reuniòn";
+            this.chkNotas_reuniones.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkInvestigacion
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(135, 33);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(98, 19);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Investigación";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkInvestigacion.AutoSize = true;
+            this.chkInvestigacion.Location = new System.Drawing.Point(135, 33);
+            this.chkInvestigacion.Name = "chkInvestigacion";
+            this.chkInvestigacion.Size = new System.Drawing.Size(98, 19);
+            this.chkInvestigacion.TabIndex = 1;
+            this.chkInvestigacion.Text = "Investigación";
+            this.chkInvestigacion.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chkRepositorio
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 33);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(89, 19);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Repositorio";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkRepositorio.AutoSize = true;
+            this.chkRepositorio.Location = new System.Drawing.Point(6, 33);
+            this.chkRepositorio.Name = "chkRepositorio";
+            this.chkRepositorio.Size = new System.Drawing.Size(89, 19);
+            this.chkRepositorio.TabIndex = 0;
+            this.chkRepositorio.Text = "Repositorio";
+            this.chkRepositorio.UseVisualStyleBackColor = true;
+            this.chkRepositorio.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // cmdGrabar
             // 
@@ -229,7 +230,7 @@
             this.Controls.Add(this.mrcReunion);
             this.Controls.Add(this.lblDetalle_Actividad);
             this.Controls.Add(this.lstTipo_de_Actividad);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lblTipo_Actividad);
             this.Controls.Add(this.txtDetalle_de_Actividad);
             this.Controls.Add(this.lblFecha);
@@ -250,17 +251,17 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.TextBox txtDetalle_de_Actividad;
         private System.Windows.Forms.Label lblTipo_Actividad;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.ComboBox lstTipo_de_Actividad;
         private System.Windows.Forms.Label lblDetalle_Actividad;
         private System.Windows.Forms.GroupBox mrcReunion;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton optno;
+        private System.Windows.Forms.RadioButton optsi;
         private System.Windows.Forms.GroupBox mrcTareas;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkDebate;
+        private System.Windows.Forms.CheckBox chkNotas_reuniones;
+        private System.Windows.Forms.CheckBox chkInvestigacion;
+        private System.Windows.Forms.CheckBox chkRepositorio;
         private System.Windows.Forms.Button cmdGrabar;
         private System.Windows.Forms.Button cmdCancelar;
     }

@@ -11,10 +11,20 @@ using System.Windows.Forms;
 namespace pryGestion
 {
     public partial class frmMostrar : Form
+
     {
+        public string[,] matriztarea = new string[5, 5];
+
         public frmMostrar()
         {
             InitializeComponent();
         }
+
+        private void frmMostrar_Load(object sender, EventArgs e)
+        {
+
+          
+        }
+
     }
 }
