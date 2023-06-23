@@ -44,7 +44,6 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.mrcReunion.SuspendLayout();
             this.mrcTareas.SuspendLayout();
             this.SuspendLayout();
@@ -219,21 +218,11 @@
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(54, 395);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Grabar la seleccion en variables";
-            // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(278, 450);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.mrcTareas);
@@ -274,6 +263,5 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button cmdGrabar;
         private System.Windows.Forms.Button cmdCancelar;
-        private System.Windows.Forms.Label label5;
     }
 }

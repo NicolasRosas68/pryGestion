@@ -70,12 +70,6 @@
     <Compile Include="frmRegistrar.Designer.cs">
       <DependentUpon>frmRegistrar.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUsuariosRegistrados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUsuariosRegistrados.Designer.cs">
-      <DependentUpon>frmUsuariosRegistrados.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="bienveinidos.resx">
@@ -89,9 +83,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrar.resx">
       <DependentUpon>frmRegistrar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUsuariosRegistrados.resx">
-      <DependentUpon>frmUsuariosRegistrados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

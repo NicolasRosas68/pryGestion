@@ -16,5 +16,17 @@ namespace pryGestion
         {
             InitializeComponent();
         }
+
+        private void cmd_comenzar_Click(object sender, EventArgs e)
+        {
+            frmRegistrar registrar = new frmRegistrar();
+            registrar.ShowDialog(); 
+        }
+
+        private void cmd_Volver_Click(object sender, EventArgs e)
+        {
+            frmMain volver = new frmMain();
+            volver.ShowDialog();    
+        }
     }
 }

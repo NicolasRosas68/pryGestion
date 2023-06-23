@@ -37,7 +37,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 113);
+            this.label1.Location = new System.Drawing.Point(85, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 22);
             this.label1.TabIndex = 0;
@@ -46,22 +46,24 @@
             // cmd_Volver
             // 
             this.cmd_Volver.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_Volver.Location = new System.Drawing.Point(142, 164);
+            this.cmd_Volver.Location = new System.Drawing.Point(142, 138);
             this.cmd_Volver.Name = "cmd_Volver";
             this.cmd_Volver.Size = new System.Drawing.Size(108, 34);
             this.cmd_Volver.TabIndex = 2;
             this.cmd_Volver.Text = "volver";
             this.cmd_Volver.UseVisualStyleBackColor = true;
+            this.cmd_Volver.Click += new System.EventHandler(this.cmd_Volver_Click);
             // 
             // cmd_comenzar
             // 
             this.cmd_comenzar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_comenzar.Location = new System.Drawing.Point(28, 164);
+            this.cmd_comenzar.Location = new System.Drawing.Point(28, 138);
             this.cmd_comenzar.Name = "cmd_comenzar";
             this.cmd_comenzar.Size = new System.Drawing.Size(108, 34);
             this.cmd_comenzar.TabIndex = 3;
             this.cmd_comenzar.Text = "comenzar";
             this.cmd_comenzar.UseVisualStyleBackColor = true;
+            this.cmd_comenzar.Click += new System.EventHandler(this.cmd_comenzar_Click);
             // 
             // bienveinidos
             // 
