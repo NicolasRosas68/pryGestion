@@ -41,7 +41,6 @@ namespace pryGestion
             string varTareas = "";
             string varReuniones = "";
             if (dtpFecha.Value >= DateTime.Today)
-
             {
                 if (lstTipo_de_Actividad.SelectedIndex != -1 )
 
@@ -75,8 +74,13 @@ namespace pryGestion
                     ventanaMostrar.matriztarea[indiceFilaRegistro, 0] = dtpFecha.Value.ToString();
                     ventanaMostrar.matriztarea[indiceFilaRegistro, 1] = lstTipo_de_Actividad.Text;
                     ventanaMostrar.matriztarea[indiceFilaRegistro, 2] = txtDetalle_de_Actividad.Text;
+                    ventanaMostrar.matriztarea[indiceFilaRegistro, 3] = varReuniones;
+                    ventanaMostrar.matriztarea[indiceFilaRegistro, 4] = varTareas;
+
+
 
                     indiceFilaRegistro++;
+
                     if (indiceFilaRegistro == ventanaMostrar.matriztarea.GetLength(0))
                     {
                         cmdGrabar.Enabled = false;
@@ -107,6 +111,12 @@ namespace pryGestion
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmdMostrar_Click(object sender, EventArgs e)
+        {
+            ventanaMostrar.ShowDialog();
+            this.Hide();
         }
     }
 }

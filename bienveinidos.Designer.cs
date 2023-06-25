@@ -37,18 +37,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 79);
+            this.label1.Location = new System.Drawing.Point(113, 97);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 22);
+            this.label1.Size = new System.Drawing.Size(147, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "bienvenidos ";
             // 
             // cmd_Volver
             // 
             this.cmd_Volver.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_Volver.Location = new System.Drawing.Point(142, 138);
+            this.cmd_Volver.Location = new System.Drawing.Point(189, 170);
+            this.cmd_Volver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmd_Volver.Name = "cmd_Volver";
-            this.cmd_Volver.Size = new System.Drawing.Size(108, 34);
+            this.cmd_Volver.Size = new System.Drawing.Size(144, 42);
             this.cmd_Volver.TabIndex = 2;
             this.cmd_Volver.Text = "volver";
             this.cmd_Volver.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@
             // cmd_comenzar
             // 
             this.cmd_comenzar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_comenzar.Location = new System.Drawing.Point(28, 138);
+            this.cmd_comenzar.Location = new System.Drawing.Point(37, 170);
+            this.cmd_comenzar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmd_comenzar.Name = "cmd_comenzar";
-            this.cmd_comenzar.Size = new System.Drawing.Size(108, 34);
+            this.cmd_comenzar.Size = new System.Drawing.Size(144, 42);
             this.cmd_comenzar.TabIndex = 3;
             this.cmd_comenzar.Text = "comenzar";
             this.cmd_comenzar.UseVisualStyleBackColor = true;
@@ -67,13 +70,15 @@
             // 
             // bienveinidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(296, 275);
+            this.ClientSize = new System.Drawing.Size(395, 338);
             this.Controls.Add(this.cmd_comenzar);
             this.Controls.Add(this.cmd_Volver);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "bienveinidos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "bienveinidos";
             this.ResumeLayout(false);
             this.PerformLayout();
