@@ -88,7 +88,7 @@ namespace pryGestion
 
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private void FrmMain_Load(object sender, EventArgs e)
         {
 
         }
